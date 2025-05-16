@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Afghans.fr Project
 
-## Getting Started
+A Next.js application for the Afghans.fr platform.
 
-First, run the development server:
+## Project Setup
+
+### Prerequisites
+
+- Node.js (version specified in `.nvmrc`)
+- npm or pnpm
+- Git
+
+### Local Development
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:youruser/afghans-fr.git
+cd afghans-fr
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+3. Copy the example environment file:
+
+```bash
+cp .env.example .env.local
+```
+
+4. Update the environment variables in `.env.local` with your Supabase credentials.
+
+5. Start the development server:
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/
+├── src/
+│    ├── app/         # Next.js App Router pages
+│    ├── components/  # Reusable UI components
+│    ├── lib/         # Utility functions and libraries
+│    └── styles/      # Global styles
+├── public/           # Static assets
+├── docs/             # Project documentation
+│    └── decision-log.md
+├── FEATURES.md       # Feature roadmap
+└── README.md         # This file
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+- **Production** (afghans.fr): Automatically deployed from the `main` branch
+- **Preview** (dev.afghans.fr): Automatically deployed from the `dev` branch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development Workflow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Create feature branches from `dev`
+2. Make changes and test locally
+3. Create a pull request to the `dev` branch
+4. Once reviewed and merged, test on dev.afghans.fr
+5. When stable, merge `dev` into `main` for production deployment
 
-## Deploy on Vercel
+## Documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- See [FEATURES.md](./FEATURES.md) for the feature roadmap
+- See [docs/decision-log.md](./docs/decision-log.md) for architectural decisions
