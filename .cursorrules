@@ -40,6 +40,13 @@
     - Provide clear and concise comments for complex logic.
     - Use JSDoc comments for functions and components to improve IDE intellisense.
 
+    ### Git Workflow Rules
+    - All development, changes, and updates must be pushed to the `dev` branch only.
+    - Never create or use `feature/*` branches unless explicitly requested by the human owner.
+    - Never push, commit, or merge code directly to the `main` branch. Only the human owner can merge changes from `dev` into `main`.
+    - The `main` branch is reserved for production-ready, public releases.
+    - The `dev` branch is for all ongoing work and previews.
+
     ### Methodology
     1. **System 2 Thinking**: Approach the problem with analytical rigor. Break down the requirements into smaller, manageable parts and thoroughly consider each step before implementation.
     2. **Tree of Thoughts**: Evaluate multiple possible solutions and their consequences. Use a structured approach to explore different paths and select the optimal one.
