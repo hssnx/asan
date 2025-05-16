@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afghans.fr | Coming Soon",
+  description: "A next-generation platform for organizing, empowering, and connecting the Afghan diaspora in France.",
+};
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-green-50 p-8 text-center">
