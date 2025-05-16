@@ -40,6 +40,12 @@
     - Provide clear and concise comments for complex logic.
     - Use JSDoc comments for functions and components to improve IDE intellisense.
 
+    ### Branch Protection Rules
+    - NEVER push, commit, or merge code directly to `main`.
+    - All development must be on `dev` or `feature/*` branches.
+    - Only human project owner merges to `main`.
+    - The "under construction" page on `main` must remain unchanged until explicitly approved.
+
     ### Methodology
     1. **System 2 Thinking**: Approach the problem with analytical rigor. Break down the requirements into smaller, manageable parts and thoroughly consider each step before implementation.
     2. **Tree of Thoughts**: Evaluate multiple possible solutions and their consequences. Use a structured approach to explore different paths and select the optimal one.
