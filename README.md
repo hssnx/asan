@@ -28,7 +28,7 @@
 
 ## 📂 Folder Structure (May slightly change always make sure to index it in real time):
 
-/asan
+`/asan
 ├── src/
 │ ├── app/ # Pages/routes (Next.js App Router)
 │ │ ├── page.tsx # Home page
@@ -46,8 +46,7 @@
 ├── tailwind.config.ts # Tailwind config
 ├── vercel.json # (optional) Vercel config
 ├── .gitignore # Node, env, vercel, etc.
-├── README.md # Full project doc
-
+├── README.md # Full project doc`
 **No `/client` or `/server` folders required unless you add a backend in the future.**
 
 ---
