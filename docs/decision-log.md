@@ -68,3 +68,46 @@ This document tracks significant design, technical, and infrastructure decisions
   - No direct commits allowed
 
 ## [Future dates will be added as decisions are made]
+
+## 2023-11-14: Project Structure Scaffold
+
+### Decisions:
+
+1. **Folder Structure**:
+
+   - Implemented the exact folder structure as specified in the requirements
+   - Created route groups for public and dashboard areas using the Next.js convention with parentheses: `(public)` and `(dashboard)`
+   - Set up API routes for future implementation
+
+2. **Supabase Integration**:
+
+   - Created a simplified Supabase client that can be imported throughout the app
+   - Simplified server-side handling to avoid TypeScript errors and improve maintainability
+   - Added a note about server component usage of Supabase
+
+3. **Component Design**:
+
+   - Created basic Avatar and HouseholdAvatar components
+   - Used functional components with TypeScript interfaces
+
+4. **Type System**:
+
+   - Defined comprehensive TypeScript interfaces for all major entities
+   - Used consistent naming and property conventions
+   - Included domain-specific types like job statuses and help request urgency levels
+
+5. **CSS/Styling**:
+
+   - Updated Tailwind CSS configuration to work with Tailwind v4
+   - Used `@import "tailwindcss/preflight"` instead of `@tailwind base` as required by v4
+   - Kept the shadcn/ui styling variables for later component addition
+
+6. **Environment Variables**:
+   - Added fallbacks for Supabase environment variables to prevent runtime errors
+   - Used console warnings instead of thrown errors for development experience
+
+### Rationale:
+
+- **Simplicity First**: Implemented minimal placeholder content to ensure the structure works
+- **TypeScript Strictness**: Ensured proper typing throughout the codebase
+- **Framework Alignment**: Followed Next.js App Router conventions for folder structure
